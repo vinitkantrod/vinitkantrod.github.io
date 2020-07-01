@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.scss" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="index.css" />
     <title>Abbreviation</title>
     <style>
       table {
@@ -21,51 +22,54 @@
   </head>
   <body>
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-          <a class="navbar-brand" href="#">Hello Consultancy</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" 
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          <a class="navbar-brand" href="#">Hello {...World}</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
-              
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                      <a class="nav-link" href="#">Home 
+                      <a class="nav-link" href="#">Home
                           <span class="sr-only">(current)</span>
                       </a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                       <a class="nav-link" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#contact">Contact</a>
-                  </li>
+                  </li> -->
               </ul>
           </div>
       </div>
-    </nav> -->
+    </nav>
 
 
     <header class="jumbotron jumbotron-fluid" id="landing">
-      <div class="container-fluid text-center"> 
-        <h1 class="display-3">The Abbreviations that you use</h1>
-        <span class="txt anim-text-flow">How are you? Bacon ipsum dolor sit amet.</span>
+      <div class="container-fluid text-center">
+        <h1 class="display-3">Abbreviations</h1>
       </div>
     </header>
 
+    <div class="wrap">
+      <h1 class="split"> </h1>
+    </div>
+
     <div id="card-1">
       <table>
-        <caption>The Funny Abbreviation</caption>
+        <caption id="text-caption"><h3>The Funny Abbreviation</h3></caption>
         <thead>
           <tr><th>Word in full</th><th>Abbreviation</th></tr>
         </thead>
-        
+
         <tbody>
-          <tr><td data-label="Word">A Moderate Amount of Hate</td><td data-label="Abbr">AMAOH</td></tr>
-          <tr><td data-label="Word">Am I Right</td><td data-label="Abbr">AIR</td></tr>
+          <tr><td>A Moderate Amount of Hate</td><td>AMAOH</td></tr>
+          <tr><td>Am I Right</td><td>AIR</td></tr>
           <tr><td>Another Day in Hell</td><td>ADIH</td></tr>
           <tr><td>As Far As I Know</td><td>AFAIK</td></tr>
           <tr><td>As Soon As Possible</td><td>ASAP</td></tr>
@@ -173,21 +177,94 @@
         </tbody>
       </table>
     </div>
-    
-  </div>
+
+
+    <!-- Footer -->
+    <footer class="footer page-footer font-medium blue pt-4" id="footer">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://github.com/vinitkantrod/"> vinitkantrod.github.io</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- <script src="index.js"></script> -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script> -->
   <script type="text/javascript">
 
     /*! A fix for the iOS orientationchange zoom bug. Script by @scottjehl, rebound by @wilto.MIT / GPLv2 License.*/
-    (function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j<8||k<8&&j>6)&&i>5)?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this);
+    // (function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j<8||k<8&&j>6)&&i>5)?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this);
 
-      $('.txt').html(function(i, html) {
-      var chars = $.trim(html).split("");
+    // Quotes about learning from goodreads -- http://www.goodreads.com/quotes/tag/learning
 
-      return '<span>' + chars.join('</span><span>') + '</span>';
-    });
+var quotes = [
+	"“Wisdom is not a product of schooling but of the lifelong attempt to acquire it.”  <br><br>— Albert Einstein",
+	"“Live as if you were to die tomorrow. Learn as if you were to live forever.” <br><br>—  Mahatma Gandhi",
+	"“Tell me and I forget, teach me and I may remember, involve me and I learn.” <br><br>— Benjamin Franklin",
+	"“Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.”<br><br>— Richard Feynman",
+	
+	"“It is important that students bring a certain ragamuffin, barefoot irreverence to their studies; they are not here to worship what is known, but to question it.”  <br><br>—  Jacob Bronowski"
+];
+
+// var index = 0;
+// var max = quotes.length - 1;
+// var delay = .02;
+
+// function random(min, max){
+// 	return (Math.random() * (max - min)) + min;
+// }
+
+// function cycleQuotes(arr, i, sel){
+// 	var el = $(sel);
+// 	var message = arr[i];
+//   el.html(message);
+//   console.log("message: ", message);
+  
+//   var split = Array.from(message);
+//   console.log("split: ", split);
+  
+//   var time = split.length * delay;
+//   console.log("time: ", time);
+  
+	
+// 	$(split).each(function(i){
+//     console.log("i: ", split[i]);
+    
+// 		// TweenMax.from($(this), time, {
+// 		// 	opacity: 0,
+// 		// 	x: 0,
+// 		// 	y: random(-200, 200),
+// 		// 	z: random(500, 1000),
+// 		// 	// scale: .1,
+// 		// 	delay: i * delay,
+// 		// 	yoyo: true,
+// 		// 	repeat: -1,
+// 		// 	repeatDelay: time * 4,
+// 		// 	ease: Power1.easeOut
+// 		// });
+// 	});
+	
+// 	index = index == max ?  0 : (index + 1);
+
+// 	setTimeout(function(){
+		
+// 		cycleQuotes(quotes, index, ".split");
+// 	}, ((time * 4) + (time * 4)) * 1000);
+	
+// }
+
+// $(window).on("load", function(){
+//   console.log("window loaded....");
+  
+// 	cycleQuotes(quotes, index, ".split");
+// });
+
   </script>
   </body>
 </html>
