@@ -6,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="header_text.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Abbreviation</title>
-    <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      </style>
+      <script>
+        window.console = window.console || function(t) {};
+      </script>
+      <script>
+        if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+        }
+      </script>
   </head>
-  <body>
+  <body translate="no">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: #34495e;">
       <div class="container">
-          <a class="navbar-brand" href="#">Hello {...World}</a>
+          <a class="navbar-brand" href="#">Hey {...World}</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +52,19 @@
     <header class="jumbotron jumbotron-fluid" id="landing">
       <div class="container-fluid text-center">
         <h1 class="display-3">Abbreviations</h1>
+        <div class="content">
+          <div class="content__container">
+            <p class="content__container__text">
+              Hello
+            </p>
+            <ul class="content__container__list">
+              <li class="content__container__list__item">Developer !</li>
+              <li class="content__container__list__item">Product Manager !</li>
+              <li class="content__container__list__item">Project Manager !</li>
+              <li class="content__container__list__item">Engineers !</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
